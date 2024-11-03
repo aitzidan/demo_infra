@@ -29,7 +29,7 @@
             ],
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
-              "./node_modules/@generafi/gf-autocomplete/src/lib/styles/style.scss",
+              "./node_modules/@generafi/gf-autocomplete/src/lib/styles/ineo.scss",
               "src/styles.scss"
             ],
             "scripts": []
