@@ -12,10 +12,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpCacheInterceptorModule } from '@ngneat/cashew';
 import { AutoCompleteComponent } from './pages/auto-complete/auto-complete.component';
 import { RouterModule, Routes } from '@angular/router';
+import { TableWithPopupComponent } from './pages/table-with-popup/table-with-popup.component';
+
+import { GfPopUpModule } from '@generafi/gf-popup';
+import { GfTableLinkPopUpModule } from '@generafi/gf-table-link-popup';
 
 const routes: Routes = [
   { path: '', redirectTo: '/auto-complete', pathMatch: 'full' },
-  { path: 'auto-complete', component: AutoCompleteComponent }
+  { path: 'auto-complete', component: AutoCompleteComponent },
+  { path: 'table-link-popup', component: TableWithPopupComponent }
 ];
 
 @NgModule({
@@ -23,6 +28,7 @@ const routes: Routes = [
     AppComponent,
     AppNavbarComponent,
     AutoCompleteComponent,
+    TableWithPopupComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,9 @@ const routes: Routes = [
     HttpCacheInterceptorModule.forRoot({
       ttl: 60000 // Cache lifetime in milliseconds (e.g., 1 minute)
     }),
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    GfPopUpModule,
+    GfTableLinkPopUpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,21 @@
+<gf-table-link-popup #gfTableLinkPopup [isButtonAdd]="true" [httpService]="httpService" 
+  [routingDetails]="'commandes/details'"
+  [columns]="[
+    { name: 'numeroCommande', label: 'Numéro commande', width: '46%',type:'string' },
+    { name: 'dateCommande', label: 'Date commande', width: '16%' },
+    { name: 'devise', label: 'Devise', width: '16%', condition: 'access' ,type:'string' },
+    { name: 'montant', label: 'Montant TTC', width: '16%' ,type:'number' , isInput:true },
+    { name: 'actions', label: '', width: '3%' }
+  ]" 
+btnText="Ajouter une commande"
+[columnsPopUp]="[
+{ width: 180, name: 'Date', prop: 'dateCommande' },
+{ width: 300, name: 'Numéro', prop: 'numeroCommande' },
+{ width: 300, name: 'Devise', prop: 'devise' },
+{ width: 180, name: 'Montant', prop: 'montant' }]"
+  [tableFooter]="[
+  { label: 'Total commande', value: 0, name: 'totalCommande' }
+]"
+[titlePopUp]="'Commandes'"
+>
+</gf-table-link-popup>

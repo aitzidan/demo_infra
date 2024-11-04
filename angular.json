@@ -30,6 +30,8 @@
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
               "./node_modules/@generafi/gf-autocomplete/src/lib/styles/ineo.scss",
+              "./node_modules/@generafi/gf-popup/src/lib/styles/ineo.scss",
+              "./node_modules/@generafi/gf-table-link-popup/src/lib/styles/ineo.scss",
               "src/styles.scss"
             ],
             "scripts": []
