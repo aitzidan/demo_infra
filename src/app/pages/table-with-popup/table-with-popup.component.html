@@ -7,6 +7,10 @@
     { name: 'montant', label: 'Montant TTC', width: '16%' ,type:'number' , isInput:true },
     { name: 'actions', label: '', width: '3%' }
   ]" 
+  [data]="[
+    {numeroCommande:'12',dateCommande:'12-12-2024',devise:'MAD',montant:'1200' },
+    {numeroCommande:'12',dateCommande:'12-12-2024',devise:'MAD',montant:'1200' }
+  ]"
 btnText="Ajouter une commande"
 [columnsPopUp]="[
 { width: 180, name: 'Date', prop: 'dateCommande' },
