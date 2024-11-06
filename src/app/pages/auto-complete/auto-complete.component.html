@@ -4,5 +4,12 @@
     </div>
     <div>
         <gf-autocomplete labelAutocomplete="Client" [endPoint]="'tiers/clientsProspectsSome'" [httpService]="httpService"></gf-autocomplete>
+        <gf-inputNumber
+        mode="decimal"
+        locale="fr-FR"
+        [minFractionDigits]="2"
+        fieldSize="'tiny'"
+      ></gf-inputNumber
+    >
     </div>
 </div>

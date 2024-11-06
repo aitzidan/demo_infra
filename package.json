@@ -19,7 +19,7 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "@generafi/common": "0.0.1-beta.7.4",
-    "@generafi/gf-autocomplete": "^14.1.56",
+    "@generafi/gf-autocomplete": "^14.x.x",
     "@generafi/gf-table-link-popup": "^0.0.12",
     "@generafi/gf-form-secondary": "^1.1.1",
     "@generafi/gf-popup": "^0.0.18",
