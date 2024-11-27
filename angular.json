@@ -33,6 +33,7 @@
               "./node_modules/@generafi/gf-popup/src/lib/styles/ineo.scss",
               "./node_modules/@generafi/gf-table-link-popup/src/lib/styles/ineo.scss",
               "./node_modules/@generafi/gf-form-secondary/src/lib/styles/ineo.scss",
+              "./node_modules/@generafi/gf-form-main/src/lib/styles/form-main-ineo.scss",
               "src/styles.scss"
             ],
             "scripts": []

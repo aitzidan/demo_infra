@@ -18,12 +18,15 @@ import { GfPopUpModule } from '@generafi/gf-popup';
 import { GfTableLinkPopUpModule } from '@generafi/gf-table-link-popup';
 import { FormSecondaireComponent } from './pages/form-secondaire/form-secondaire.component';
 import { GfFormSecondaryModule } from '@generafi/gf-form-secondary';
+import { FormMainComponent } from './pages/form-main/form-main.component';
+import { GfFormMainModule } from '@generafi/gf-form-main';
 
 const routes: Routes = [
   { path: '', redirectTo: '/auto-complete', pathMatch: 'full' },
   { path: 'auto-complete', component: AutoCompleteComponent },
   { path: 'table-link-popup', component: TableWithPopupComponent },
-  { path: 'form-secondaire', component: FormSecondaireComponent }
+  { path: 'form-secondaire', component: FormSecondaireComponent },
+  { path: 'form-main', component: FormMainComponent }
 ];
 
 @NgModule({
@@ -33,6 +36,7 @@ const routes: Routes = [
     AutoCompleteComponent,
     TableWithPopupComponent,
     FormSecondaireComponent,
+    FormMainComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +53,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     GfPopUpModule,
     GfTableLinkPopUpModule,
-    GfFormSecondaryModule
+    GfFormSecondaryModule,
+    GfFormMainModule
   ],
   providers: [],
   bootstrap: [AppComponent]
